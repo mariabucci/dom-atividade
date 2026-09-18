@@ -1,0 +1,64 @@
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #805e88;
+            padding: 30px;
+        }
+
+        section {
+            background-color: white;
+            padding: 25px;
+            margin-bottom: 25px;
+            border-radius: 10px;
+        }
+
+        h1 {
+            text-align: center;
+            font-family: 'georgia', serif;
+            font-size: 40px;
+        }
+
+        h2 {
+            margin-bottom: 20px;
+        }
+
+        input {
+            padding: 10px;
+            margin: 5px;
+        }
+
+        button {
+            padding: 10px 15px;
+            cursor: pointer;
+        }
+
+        p {
+            font-size: 18px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        th, td {
+            border: 1px solid #f8dbff;
+            padding: 10px;
+            text-align: center;
+        }
+
+        .cards {
+            display: flex;
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        .card {
+            border: 1px solid #ccc;
+            padding: 15px;
+        }
+
+        #sistema {
+            display: none;
+        }

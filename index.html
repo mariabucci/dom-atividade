@@ -1,0 +1,1249 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercícios JavaScript - DOM</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <h1>Exercícios de JavaScript - DOM</h1>
+
+
+    <!-- EXERCÍCIO 01 -->
+    <section>
+        <h2>01 - Saudação</h2>
+
+        <input type="text" id="nome01" placeholder="Digite seu nome">
+
+        <button id="btn01">Enviar</button>
+
+        <p id="resultado01"></p>
+    </section>
+
+
+    <!-- EXERCÍCIO 02 -->
+    <section>
+        <h2 id="titulo02">
+            Curso de Desenvolvimento de Sistemas
+        </h2>
+
+        <button id="btn02">
+            Alterar título
+        </button>
+    </section>
+
+
+    <!-- EXERCÍCIO 03 -->
+    <section>
+        <h2>03 - Contador de Cliques</h2>
+
+        <button id="btn03">
+            + Clique aqui
+        </button>
+
+        <p id="contador03">
+            Cliques: 0
+        </p>
+    </section>
+
+
+    <!-- EXERCÍCIO 04 -->
+    <section>
+        <h2>04 - Atendimento</h2>
+
+        <p id="status04">
+            Status: Atendimento fechado
+        </p>
+
+        <button id="btn04">
+            Abrir atendimento
+        </button>
+    </section>
+
+
+    <!-- EXERCÍCIO 05 -->
+    <section>
+        <h2>05 - Calculadora Simples</h2>
+
+        <input type="text" id="produto05" placeholder="Produto">
+
+        <input type="number" id="quantidade05" placeholder="Quantidade">
+
+        <input type="number" id="preco05" placeholder="Preço">
+
+        <button id="btn05">
+            Calcular
+        </button>
+
+        <p id="resultado05"></p>
+    </section>
+
+
+    <!-- EXERCÍCIO 06 -->
+    <section>
+        <h2>06 - Sistema de Notas</h2>
+
+        <input type="number" id="nota01" placeholder="Nota 1">
+
+        <input type="number" id="nota02" placeholder="Nota 2">
+
+        <input type="number" id="nota03" placeholder="Nota 3">
+
+        <button id="btn06">
+            Calcular média
+        </button>
+
+        <p id="resultado06"></p>
+    </section>
+
+
+    <!-- EXERCÍCIO 07 -->
+    <section>
+        <h2>07 - Validação de Formulário</h2>
+
+        <input type="text" id="nome07" placeholder="Nome">
+
+        <input type="email" id="email07" placeholder="E-mail">
+
+        <input type="password" id="senha07" placeholder="Senha">
+
+        <button id="btn07">
+            Cadastrar
+        </button>
+
+        <p id="resultado07"></p>
+    </section>
+
+
+    <!-- EXERCÍCIO 08 -->
+    <section>
+        <h2>08 - Sistema de Estoque</h2>
+
+        <input type="text" id="produto08" placeholder="Produto">
+
+        <input
+            type="number"
+            id="disponivel08"
+            placeholder="Quantidade disponível"
+        >
+
+        <input
+            type="number"
+            id="solicitada08"
+            placeholder="Quantidade solicitada"
+        >
+
+        <button id="btn08">
+            Verificar
+        </button>
+
+        <p id="resultado08"></p>
+    </section>
+
+
+    <!-- EXERCÍCIO 09 -->
+    <section>
+        <h2>09 - Lista de Tarefas</h2>
+
+        <input
+            type="text"
+            id="tarefa09"
+            placeholder="Digite uma tarefa"
+        >
+
+        <button id="btn09">
+            Adicionar
+        </button>
+
+        <ul id="lista09"></ul>
+    </section>
+
+
+    <!-- EXERCÍCIO 10 -->
+    <section>
+        <h2>10 - Calculadora de Desconto</h2>
+
+        <input type="text" id="produto10" placeholder="Produto">
+
+        <input type="number" id="preco10" placeholder="Preço">
+
+        <input
+            type="number"
+            id="desconto10"
+            placeholder="Desconto %"
+        >
+
+        <button id="btn10">
+            Calcular
+        </button>
+
+        <p id="resultado10"></p>
+    </section>
+
+
+    <!-- EXERCÍCIO 11 -->
+    <section>
+        <div id="login11">
+
+            <h2>11 - Sistema de Login</h2>
+
+            <input
+                type="text"
+                id="usuario11"
+                placeholder="Usuário"
+            >
+
+            <input
+                type="password"
+                id="senha11"
+                placeholder="Senha"
+            >
+
+            <button id="btn11">
+                Entrar
+            </button>
+
+            <p id="resultado11"></p>
+
+        </div>
+
+        <div id="sistema">
+            <h2>Bem-vindo ao sistema acadêmico!</h2>
+        </div>
+    </section>
+
+
+    <!-- EXERCÍCIO 12 -->
+    <section>
+        <h2>12 - Carrinho de Compras</h2>
+
+        <button
+            class="btnProduto12"
+            data-nome="Notebook"
+            data-preco="3500"
+        >
+            Notebook - R$ 3500
+        </button>
+
+        <button
+            class="btnProduto12"
+            data-nome="Mouse"
+            data-preco="80"
+        >
+            Mouse - R$ 80
+        </button>
+
+        <button
+            class="btnProduto12"
+            data-nome="Teclado"
+            data-preco="150"
+        >
+            Teclado - R$ 150
+        </button>
+
+        <h3>Carrinho</h3>
+
+        <ul id="carrinho12"></ul>
+
+        <p id="quantidade12">
+            Quantidade de produtos: 0
+        </p>
+
+        <p id="total12">
+            Total: R$ 0,00
+        </p>
+    </section>
+
+
+    <!-- EXERCÍCIO 13 -->
+    <section>
+        <h2>13 - Cadastro de Alunos</h2>
+
+        <input type="text" id="nome13" placeholder="Nome">
+
+        <input type="number" id="idade13" placeholder="Idade">
+
+        <input type="text" id="curso13" placeholder="Curso">
+
+        <button id="btn13">
+            Cadastrar
+        </button>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Nome</th>
+                    <th>Idade</th>
+                    <th>Curso</th>
+                    <th>Ação</th>
+                </tr>
+            </thead>
+
+            <tbody id="tabela13"></tbody>
+        </table>
+    </section>
+
+
+    <!-- EXERCÍCIO 14 -->
+    <section>
+        <h2>14 - Dashboard de Vendas</h2>
+
+        <input
+            type="text"
+            id="produto14"
+            placeholder="Produto"
+        >
+
+        <input
+            type="number"
+            id="quantidade14"
+            placeholder="Quantidade"
+        >
+
+        <input
+            type="number"
+            id="valor14"
+            placeholder="Valor unitário"
+        >
+
+        <button id="btn14">
+            Adicionar venda
+        </button>
+
+        <br><br>
+
+        <input
+            type="text"
+            id="pesquisa14"
+            placeholder="Pesquisar produto"
+        >
+
+        <div class="cards">
+
+            <div class="card">
+                <p>Faturamento</p>
+                <strong id="faturamento14">
+                    R$ 0,00
+                </strong>
+            </div>
+
+            <div class="card">
+                <p>Itens vendidos</p>
+                <strong id="itens14">
+                    0
+                </strong>
+            </div>
+
+            <div class="card">
+                <p>Vendas realizadas</p>
+                <strong id="vendas14">
+                    0
+                </strong>
+            </div>
+
+        </div>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Produto</th>
+                    <th>Quantidade</th>
+                    <th>Valor unitário</th>
+                    <th>Total</th>
+                </tr>
+            </thead>
+
+            <tbody id="tabela14"></tbody>
+        </table>
+    </section>
+
+
+    <!-- EXERCÍCIO 15 -->
+    <section>
+        <h2>15 - Mini Sistema Acadêmico</h2>
+
+        <input
+            type="text"
+            id="nome15"
+            placeholder="Nome"
+        >
+
+        <input
+            type="text"
+            id="ra15"
+            placeholder="RA"
+        >
+
+        <input
+            type="text"
+            id="curso15"
+            placeholder="Curso"
+        >
+
+        <input
+            type="number"
+            id="nota115"
+            placeholder="Nota 1"
+        >
+
+        <input
+            type="number"
+            id="nota215"
+            placeholder="Nota 2"
+        >
+
+        <button id="btn15">
+            Cadastrar
+        </button>
+
+        <br><br>
+
+        <input
+            type="text"
+            id="pesquisa15"
+            placeholder="Pesquisar aluno"
+        >
+
+        <div class="cards">
+
+            <div class="card">
+                <p>Alunos</p>
+                <strong id="totalAlunos15">
+                    0
+                </strong>
+            </div>
+
+            <div class="card">
+                <p>Aprovados</p>
+                <strong id="aprovados15">
+                    0
+                </strong>
+            </div>
+
+            <div class="card">
+                <p>Reprovados</p>
+                <strong id="reprovados15">
+                    0
+                </strong>
+            </div>
+
+        </div>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Nome</th>
+                    <th>RA</th>
+                    <th>Curso</th>
+                    <th>Média</th>
+                    <th>Situação</th>
+                    <th>Ação</th>
+                </tr>
+            </thead>
+
+            <tbody id="tabela15"></tbody>
+        </table>
+    </section>
+
+
+    <script>
+
+        // =====================================================
+        // EXERCÍCIO 01 - SAUDAÇÃO
+        // =====================================================
+
+        const nome01 = document.querySelector("#nome01");
+        const btn01 = document.querySelector("#btn01");
+        const resultado01 = document.querySelector("#resultado01");
+
+        btn01.addEventListener("click", function() {
+
+            const nome = nome01.value;
+
+            resultado01.textContent =
+                `Olá, ${nome}! Seja bem-vindo!`;
+
+        });
+
+
+        // =====================================================
+        // EXERCÍCIO 02 - ALTERANDO O TÍTULO
+        // =====================================================
+
+        const titulo02 = document.querySelector("#titulo02");
+        const btn02 = document.querySelector("#btn02");
+
+        btn02.addEventListener("click", function() {
+
+            titulo02.textContent =
+                "Desenvolvimento de Sistemas — SENAI";
+
+            titulo02.style.color = "blue";
+
+        });
+
+
+        // =====================================================
+        // EXERCÍCIO 03 - CONTADOR
+        // =====================================================
+
+        const btn03 = document.querySelector("#btn03");
+        const contador03 = document.querySelector("#contador03");
+
+        let cliques03 = 0;
+
+        btn03.addEventListener("click", function() {
+
+            cliques03++;
+
+            contador03.textContent =
+                `Cliques: ${cliques03}`;
+
+        });
+
+
+        // =====================================================
+        // EXERCÍCIO 04 - ATENDIMENTO
+        // =====================================================
+
+        const status04 = document.querySelector("#status04");
+        const btn04 = document.querySelector("#btn04");
+
+        btn04.addEventListener("click", function() {
+
+            status04.textContent =
+                "Status: Atendimento aberto";
+
+            status04.style.color = "green";
+
+        });
+
+
+        // =====================================================
+        // EXERCÍCIO 05 - CALCULADORA
+        // =====================================================
+
+        const produto05 = document.querySelector("#produto05");
+        const quantidade05 = document.querySelector("#quantidade05");
+        const preco05 = document.querySelector("#preco05");
+        const btn05 = document.querySelector("#btn05");
+        const resultado05 = document.querySelector("#resultado05");
+
+        btn05.addEventListener("click", function() {
+
+            const produto = produto05.value;
+            const quantidade = Number(quantidade05.value);
+            const preco = Number(preco05.value);
+
+            const total = quantidade * preco;
+
+            resultado05.textContent =
+                `${produto} - Total: R$ ${total.toFixed(2)}`;
+
+        });
+
+
+        // =====================================================
+        // EXERCÍCIO 06 - SISTEMA DE NOTAS
+        // =====================================================
+
+        const nota01 = document.querySelector("#nota01");
+        const nota02 = document.querySelector("#nota02");
+        const nota03 = document.querySelector("#nota03");
+        const btn06 = document.querySelector("#btn06");
+        const resultado06 = document.querySelector("#resultado06");
+
+        btn06.addEventListener("click", function() {
+
+            const n1 = Number(nota01.value);
+            const n2 = Number(nota02.value);
+            const n3 = Number(nota03.value);
+
+            const media = (n1 + n2 + n3) / 3;
+
+            if (media >= 6) {
+
+                resultado06.textContent =
+                    `Média: ${media.toFixed(1)} - Aprovado`;
+
+            } else {
+
+                resultado06.textContent =
+                    `Média: ${media.toFixed(1)} - Reprovado`;
+
+            }
+
+        });
+
+
+        // =====================================================
+        // EXERCÍCIO 07 - VALIDAÇÃO
+        // =====================================================
+
+        const nome07 = document.querySelector("#nome07");
+        const email07 = document.querySelector("#email07");
+        const senha07 = document.querySelector("#senha07");
+        const btn07 = document.querySelector("#btn07");
+        const resultado07 = document.querySelector("#resultado07");
+
+        btn07.addEventListener("click", function() {
+
+            if (
+                nome07.value === "" ||
+                email07.value === "" ||
+                senha07.value === ""
+            ) {
+
+                resultado07.textContent =
+                    "Preencha todos os campos.";
+
+                resultado07.style.color = "red";
+
+            } else {
+
+                resultado07.textContent =
+                    "Cadastro realizado com sucesso!";
+
+                resultado07.style.color = "green";
+
+            }
+
+        });
+
+
+        // =====================================================
+        // EXERCÍCIO 08 - ESTOQUE
+        // =====================================================
+
+        const produto08 = document.querySelector("#produto08");
+        const disponivel08 = document.querySelector("#disponivel08");
+        const solicitada08 = document.querySelector("#solicitada08");
+        const btn08 = document.querySelector("#btn08");
+        const resultado08 = document.querySelector("#resultado08");
+
+        btn08.addEventListener("click", function() {
+
+            const disponivel = Number(disponivel08.value);
+            const solicitada = Number(solicitada08.value);
+
+            if (disponivel >= solicitada) {
+
+                resultado08.textContent =
+                    "Pedido disponível para separação.";
+
+                resultado08.style.color = "green";
+
+            } else {
+
+                resultado08.textContent =
+                    "Estoque insuficiente.";
+
+                resultado08.style.color = "red";
+
+            }
+
+        });
+
+
+        // =====================================================
+        // EXERCÍCIO 09 - LISTA DE TAREFAS
+        // =====================================================
+
+        const tarefa09 = document.querySelector("#tarefa09");
+        const btn09 = document.querySelector("#btn09");
+        const lista09 = document.querySelector("#lista09");
+
+        btn09.addEventListener("click", function() {
+
+            const texto = tarefa09.value;
+
+            if (texto !== "") {
+
+                const item = document.createElement("li");
+
+                item.textContent = texto;
+
+                lista09.appendChild(item);
+
+                tarefa09.value = "";
+
+            }
+
+        });
+
+
+        // =====================================================
+        // EXERCÍCIO 10 - DESCONTO
+        // =====================================================
+
+        const produto10 = document.querySelector("#produto10");
+        const preco10 = document.querySelector("#preco10");
+        const desconto10 = document.querySelector("#desconto10");
+        const btn10 = document.querySelector("#btn10");
+        const resultado10 = document.querySelector("#resultado10");
+
+        btn10.addEventListener("click", function() {
+
+            const produto = produto10.value;
+            const preco = Number(preco10.value);
+            const desconto = Number(desconto10.value);
+
+            const valorDesconto =
+                preco * desconto / 100;
+
+            const precoFinal =
+                preco - valorDesconto;
+
+            resultado10.innerHTML =
+                `${produto}<br>
+                Desconto: R$ ${valorDesconto.toFixed(2)}<br>
+                Total: R$ ${precoFinal.toFixed(2)}`;
+
+        });
+
+
+        // =====================================================
+        // EXERCÍCIO 11 - LOGIN
+        // =====================================================
+
+        const usuario11 = document.querySelector("#usuario11");
+        const senha11 = document.querySelector("#senha11");
+        const btn11 = document.querySelector("#btn11");
+        const resultado11 = document.querySelector("#resultado11");
+
+        const login11 = document.querySelector("#login11");
+        const sistema = document.querySelector("#sistema");
+
+        btn11.addEventListener("click", function() {
+
+            if (
+                usuario11.value === "aluno" &&
+                senha11.value === "1234"
+            ) {
+
+                login11.style.display = "none";
+                sistema.style.display = "block";
+
+            } else {
+
+                resultado11.textContent =
+                    "Usuário ou senha inválidos.";
+
+                resultado11.style.color = "red";
+
+            }
+
+        });
+
+
+        // =====================================================
+        // EXERCÍCIO 12 - CARRINHO
+        // =====================================================
+
+        const botoes12 =
+            document.querySelectorAll(".btnProduto12");
+
+        const carrinho12 =
+            document.querySelector("#carrinho12");
+
+        const quantidade12 =
+            document.querySelector("#quantidade12");
+
+        const total12 =
+            document.querySelector("#total12");
+
+        let produtos12 = [];
+        let valorTotal12 = 0;
+
+        botoes12.forEach(function(botao) {
+
+            botao.addEventListener("click", function() {
+
+                const nome = botao.dataset.nome;
+                const preco = Number(botao.dataset.preco);
+
+                produtos12.push({
+                    nome: nome,
+                    preco: preco
+                });
+
+                valorTotal12 += preco;
+
+                atualizarCarrinho12();
+
+            });
+
+        });
+
+        function atualizarCarrinho12() {
+
+            carrinho12.innerHTML = "";
+
+            produtos12.forEach(function(produto, indice) {
+
+                const item =
+                    document.createElement("li");
+
+                item.textContent =
+                    `${produto.nome} - R$ ${produto.preco.toFixed(2)} `;
+
+                const botaoRemover =
+                    document.createElement("button");
+
+                botaoRemover.textContent = "Remover";
+
+                botaoRemover.addEventListener("click", function() {
+
+                    valorTotal12 -= produto.preco;
+
+                    produtos12.splice(indice, 1);
+
+                    atualizarCarrinho12();
+
+                });
+
+                item.appendChild(botaoRemover);
+
+                carrinho12.appendChild(item);
+
+            });
+
+            quantidade12.textContent =
+                `Quantidade de produtos: ${produtos12.length}`;
+
+            total12.textContent =
+                `Total: R$ ${valorTotal12.toFixed(2)}`;
+
+        }
+
+
+        // =====================================================
+        // EXERCÍCIO 13 - CADASTRO DE ALUNOS
+        // =====================================================
+
+        const nome13 = document.querySelector("#nome13");
+        const idade13 = document.querySelector("#idade13");
+        const curso13 = document.querySelector("#curso13");
+        const btn13 = document.querySelector("#btn13");
+        const tabela13 = document.querySelector("#tabela13");
+
+        btn13.addEventListener("click", function() {
+
+            if (
+                nome13.value === "" ||
+                idade13.value === "" ||
+                curso13.value === ""
+            ) {
+                return;
+            }
+
+            const linha =
+                document.createElement("tr");
+
+            const colunaNome =
+                document.createElement("td");
+
+            const colunaIdade =
+                document.createElement("td");
+
+            const colunaCurso =
+                document.createElement("td");
+
+            const colunaAcao =
+                document.createElement("td");
+
+            colunaNome.textContent = nome13.value;
+            colunaIdade.textContent = idade13.value;
+            colunaCurso.textContent = curso13.value;
+
+            const botaoExcluir =
+                document.createElement("button");
+
+            botaoExcluir.textContent = "Excluir";
+
+            botaoExcluir.addEventListener("click", function() {
+
+                linha.remove();
+
+            });
+
+            colunaAcao.appendChild(botaoExcluir);
+
+            linha.appendChild(colunaNome);
+            linha.appendChild(colunaIdade);
+            linha.appendChild(colunaCurso);
+            linha.appendChild(colunaAcao);
+
+            tabela13.appendChild(linha);
+
+            nome13.value = "";
+            idade13.value = "";
+            curso13.value = "";
+
+        });
+
+
+        // =====================================================
+        // EXERCÍCIO 14 - DASHBOARD DE VENDAS
+        // =====================================================
+
+        const produto14 = document.querySelector("#produto14");
+        const quantidade14 = document.querySelector("#quantidade14");
+        const valor14 = document.querySelector("#valor14");
+        const btn14 = document.querySelector("#btn14");
+        const pesquisa14 = document.querySelector("#pesquisa14");
+        const tabela14 = document.querySelector("#tabela14");
+
+        const faturamento14 =
+            document.querySelector("#faturamento14");
+
+        const itens14 =
+            document.querySelector("#itens14");
+
+        const vendas14 =
+            document.querySelector("#vendas14");
+
+        let vendasLista14 = [];
+
+        btn14.addEventListener("click", function() {
+
+            if (
+                produto14.value === "" ||
+                quantidade14.value === "" ||
+                valor14.value === ""
+            ) {
+                return;
+            }
+
+            const venda = {
+
+                produto: produto14.value,
+
+                quantidade:
+                    Number(quantidade14.value),
+
+                valor:
+                    Number(valor14.value)
+
+            };
+
+            vendasLista14.push(venda);
+
+            produto14.value = "";
+            quantidade14.value = "";
+            valor14.value = "";
+
+            atualizarDashboard14();
+
+        });
+
+        pesquisa14.addEventListener("input", function() {
+
+            atualizarDashboard14();
+
+        });
+
+        function atualizarDashboard14() {
+
+            tabela14.innerHTML = "";
+
+            let faturamento = 0;
+            let itens = 0;
+            let vendas = 0;
+
+            const pesquisa =
+                pesquisa14.value.toLowerCase();
+
+            vendasLista14.forEach(function(venda) {
+
+                const nome =
+                    venda.produto.toLowerCase();
+
+                const total =
+                    venda.quantidade * venda.valor;
+
+                faturamento += total;
+                itens += venda.quantidade;
+                vendas++;
+
+                if (nome.includes(pesquisa)) {
+
+                    const linha =
+                        document.createElement("tr");
+
+                    const colunaProduto =
+                        document.createElement("td");
+
+                    const colunaQuantidade =
+                        document.createElement("td");
+
+                    const colunaValor =
+                        document.createElement("td");
+
+                    const colunaTotal =
+                        document.createElement("td");
+
+                    colunaProduto.textContent =
+                        venda.produto;
+
+                    colunaQuantidade.textContent =
+                        venda.quantidade;
+
+                    colunaValor.textContent =
+                        `R$ ${venda.valor.toFixed(2)}`;
+
+                    colunaTotal.textContent =
+                        `R$ ${total.toFixed(2)}`;
+
+                    linha.appendChild(colunaProduto);
+                    linha.appendChild(colunaQuantidade);
+                    linha.appendChild(colunaValor);
+                    linha.appendChild(colunaTotal);
+
+                    tabela14.appendChild(linha);
+
+                }
+
+            });
+
+            faturamento14.textContent =
+                `R$ ${faturamento.toFixed(2)}`;
+
+            itens14.textContent = itens;
+
+            vendas14.textContent = vendas;
+
+        }
+
+
+        // =====================================================
+        // EXERCÍCIO 15 - MINI SISTEMA ACADÊMICO
+        // =====================================================
+
+        const nome15 = document.querySelector("#nome15");
+        const ra15 = document.querySelector("#ra15");
+        const curso15 = document.querySelector("#curso15");
+        const nota115 = document.querySelector("#nota115");
+        const nota215 = document.querySelector("#nota215");
+        const btn15 = document.querySelector("#btn15");
+        const pesquisa15 = document.querySelector("#pesquisa15");
+        const tabela15 = document.querySelector("#tabela15");
+
+        const totalAlunos15 =
+            document.querySelector("#totalAlunos15");
+
+        const aprovados15 =
+            document.querySelector("#aprovados15");
+
+        const reprovados15 =
+            document.querySelector("#reprovados15");
+
+        let alunos15 = [];
+
+        btn15.addEventListener("click", function() {
+
+            if (
+                nome15.value === "" ||
+                ra15.value === "" ||
+                curso15.value === "" ||
+                nota115.value === "" ||
+                nota215.value === ""
+            ) {
+                return;
+            }
+
+            const nota1 =
+                Number(nota115.value);
+
+            const nota2 =
+                Number(nota215.value);
+
+            const media =
+                (nota1 + nota2) / 2;
+
+            let situacao;
+
+            if (media >= 6) {
+
+                situacao = "Aprovado";
+
+            } else if (media >= 4) {
+
+                situacao = "Recuperação";
+
+            } else {
+
+                situacao = "Reprovado";
+
+            }
+
+            const aluno = {
+
+                nome: nome15.value,
+
+                ra: ra15.value,
+
+                curso: curso15.value,
+
+                media: media,
+
+                situacao: situacao
+
+            };
+
+            alunos15.push(aluno);
+
+            nome15.value = "";
+            ra15.value = "";
+            curso15.value = "";
+            nota115.value = "";
+            nota215.value = "";
+
+            atualizarTabela15();
+
+        });
+
+        pesquisa15.addEventListener("input", function() {
+
+            atualizarTabela15();
+
+        });
+
+        function atualizarTabela15() {
+
+            tabela15.innerHTML = "";
+
+            let aprovados = 0;
+            let reprovados = 0;
+
+            const pesquisa =
+                pesquisa15.value.toLowerCase();
+
+            alunos15.forEach(function(aluno, indice) {
+
+                if (aluno.situacao === "Aprovado") {
+
+                    aprovados++;
+
+                }
+
+                if (aluno.situacao === "Reprovado") {
+
+                    reprovados++;
+
+                }
+
+                const nome =
+                    aluno.nome.toLowerCase();
+
+                if (nome.includes(pesquisa)) {
+
+                    const linha =
+                        document.createElement("tr");
+
+                    const colunaNome =
+                        document.createElement("td");
+
+                    const colunaRA =
+                        document.createElement("td");
+
+                    const colunaCurso =
+                        document.createElement("td");
+
+                    const colunaMedia =
+                        document.createElement("td");
+
+                    const colunaSituacao =
+                        document.createElement("td");
+
+                    const colunaAcao =
+                        document.createElement("td");
+
+                    colunaNome.textContent =
+                        aluno.nome;
+
+                    colunaRA.textContent =
+                        aluno.ra;
+
+                    colunaCurso.textContent =
+                        aluno.curso;
+
+                    colunaMedia.textContent =
+                        aluno.media.toFixed(1);
+
+                    colunaSituacao.textContent =
+                        aluno.situacao;
+
+                    const botaoExcluir =
+                        document.createElement("button");
+
+                    botaoExcluir.textContent =
+                        "Excluir";
+
+                    botaoExcluir.addEventListener(
+                        "click",
+                        function() {
+
+                            alunos15.splice(indice, 1);
+
+                            atualizarTabela15();
+
+                        }
+                    );
+
+                    colunaAcao.appendChild(
+                        botaoExcluir
+                    );
+
+                    linha.appendChild(
+                        colunaNome
+                    );
+
+                    linha.appendChild(
+                        colunaRA
+                    );
+
+                    linha.appendChild(
+                        colunaCurso
+                    );
+
+                    linha.appendChild(
+                        colunaMedia
+                    );
+
+                    linha.appendChild(
+                        colunaSituacao
+                    );
+
+                    linha.appendChild(
+                        colunaAcao
+                    );
+
+                    tabela15.appendChild(
+                        linha
+                    );
+
+                }
+
+            });
+
+            totalAlunos15.textContent =
+                alunos15.length;
+
+            aprovados15.textContent =
+                aprovados;
+
+            reprovados15.textContent =
+                reprovados;
+
+        }
+
+    </script>
+
+</body>
+</html>
+```
